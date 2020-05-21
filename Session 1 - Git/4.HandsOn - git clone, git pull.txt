@@ -25,3 +25,8 @@ Fast-forward
  File2.txt | 1 +
  1 file changed, 1 insertion(+)
 
+SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/gitExample (master)
+$ git fetch https://github.com/sndpoffcl/gitDemo.git
+From https://github.com/sndpoffcl/gitDemo
+ * branch            HEAD       -> FETCH_HEAD
+
