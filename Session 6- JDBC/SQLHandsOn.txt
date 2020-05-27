@@ -1,0 +1,61 @@
+mysql> CREATE DATABASE MY_DATABASE ;
+Query OK, 1 row affected (0.30 sec)
+
+mysql> USE MY_DATABASE;
+Database changed
+mysql> CREATE TABLE STUDENT_DATA ( StudentId int, LastName varchar(255), FirstName varchar(255) , Address varchar(255) , City varchar(255) );
+Query OK, 0 rows affected (0.35 sec)
+
+mysql> INSERT INTO STUDENT_DATA (StudentId , LastName , FirstName, Address , City) VALUES ( 1, 'Kumar', 'Ram', 'Bellandur', 'Bangalore');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> INSERT INTO STUDENT_DATA (StudentId , LastName , FirstName, Address , City) VALUES ( 2, 'Kumar', 'Shyam', 'Sarjapur', 'Bangalore');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM STUDENT_DATA;
++-----------+----------+-----------+-----------+-----------+
+| StudentId | LastName | FirstName | Address   | City      |
++-----------+----------+-----------+-----------+-----------+
+|         1 | Kumar    | Ram       | Bellandur | Bangalore |
+|         2 | Kumar    | Shyam     | Sarjapur  | Bangalore |
++-----------+----------+-----------+-----------+-----------+
+2 rows in set (0.03 sec)
+
+mysql> SELECT * FROM STUDENT_DATA WHERE StudentId = 1;
++-----------+----------+-----------+-----------+-----------+
+| StudentId | LastName | FirstName | Address   | City      |
++-----------+----------+-----------+-----------+-----------+
+|         1 | Kumar    | Ram       | Bellandur | Bangalore |
++-----------+----------+-----------+-----------+-----------+
+1 row in set (0.03 sec)
+
+mysql> UPDATE STUDENT_DATA SET City = 'Bengaluru' WHERE StudentId = 1;
+Query OK, 1 row affected (0.04 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM STUDENT_DATA WHERE StudentId = 1;
++-----------+----------+-----------+-----------+-----------+
+| StudentId | LastName | FirstName | Address   | City      |
++-----------+----------+-----------+-----------+-----------+
+|         1 | Kumar    | Ram       | Bellandur | Bengaluru |
++-----------+----------+-----------+-----------+-----------+
+1 row in set (0.00 sec)
+
+mysql> DELETE FROM STUDENT_DATA WHERE StudentId = 2;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> SELECT * FROM STUDENT_DATA;
++-----------+----------+-----------+-----------+-----------+
+| StudentId | LastName | FirstName | Address   | City      |
++-----------+----------+-----------+-----------+-----------+
+|         1 | Kumar    | Ram       | Bellandur | Bengaluru |
++-----------+----------+-----------+-----------+-----------+
+1 row in set (0.00 sec)
+
+mysql> DROP TABLE STUDENT_DATA ;
+Query OK, 0 rows affected (0.19 sec)
+
+mysql> SELECT * FROM STUDENT_DATA;
+ERROR 1146 (42S02): Table 'my_database.student_data' doesn't exist
+mysql> DROP DATABASE MY_DATABASE;
+Query OK, 0 rows affected (0.10 sec)
