@@ -1,25 +1,28 @@
 package com.upGrad;
 
-public class OnlineClientISP implements RestaurantOnlineISP {
+class OnlineOrderServiceImpl implements OnlineOrderService {
     public void acceptOnlineOrder() {
         //logic for placing online order
-    }
-    public void takeTelephoneOrder() {
-        //Not Applicable for Online Order
-        throw new UnsupportedOperationException();
     }
     public void payOnline() {
         //logic for paying online
     }
-
 }
-class WalkInCustomerClient implements RestaurantInPersonISP{
+
+class TelephoneOrderServiceImpl implements TelephoneOrderService {
+    public void takeTelephoneOrder() {
+        //logic for placing telephone order
+    }
+    public void payOnline() {
+        //logic for paying online
+    }
+}
+
+class WalkInOrderServiceImpl implements WalkInOrderService{
     public void walkInCustomerOrder() {
-        //Not Applicable for Online Order
-        throw new UnsupportedOperationException();
+        //logic for placing walkin order
     }
     public void payInPerson() {
-        //Not Applicable for Online Order
-        throw new UnsupportedOperationException();
+        //logic for paying in person
     }
 }
