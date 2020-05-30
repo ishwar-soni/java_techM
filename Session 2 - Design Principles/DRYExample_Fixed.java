@@ -1,6 +1,6 @@
 package com.upGrad;
-
-public class DRYExample_Fixed {
+//code according to DRY
+class LoanCalculator {
     public static int getFinalAmount(int rate, int time, int principal){
         int interest = rate * time * principal;
         return principal + interest;

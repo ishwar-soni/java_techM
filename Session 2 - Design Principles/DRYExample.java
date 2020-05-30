@@ -1,6 +1,6 @@
 package com.upGrad;
-
-public class DRYExample {
+//DRY code violation example
+ class LoanCalculator {
     public static int getFinalAmount(int rate, int time, int principal){
         int interest = rate * time * principal;
         int total = principal + interest;
