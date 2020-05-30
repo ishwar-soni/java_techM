@@ -1,8 +1,8 @@
 package com.upGrad;
 
 class Bird{
-        private boolean canBirdFly ;
-        private String birdVoice;
+    private boolean canBirdFly ;
+    private String birdVoice;
 
     public boolean isCanBirdFly() {
         return canBirdFly;
@@ -35,13 +35,13 @@ class Duck extends Bird{
 }
 
 class BirdFunctions{
-    public void makeBirdFly(Duck duck){
+    public void makeBirdFly(Bird bird){
         if(bird.canBirdFly)
             System.out.println("Bird can fly ");
         else
             System.out.println("Bird can not fly");
     }
-    public void makeBirdSpeak(ToyBird toyBird){
+    public void makeBirdSpeak(Bird bird){
         System.out.println("Bird says : " + bird.birdVoice);
     }
 }
@@ -50,5 +50,9 @@ public class LSPExercise {
     BirdFunctions birdFunctions = new BirdFunctions();
     ToyBird toyBird = new ToyBird();
     Duck duck = new Duck();
+    birdFunctions.makeBirdFly(toyBird);
+    birdFunctions.makeBirdFly(toyBird);
+    birdFunctions.makeBirdSpeak(duck);
+    birdFunctions.makeBirdSpeak(duck);
 
 }
