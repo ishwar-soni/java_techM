@@ -1,5 +1,10 @@
 package com.upGrad;
-class Mobile{
+
+abstract class ValidData{
+    pubic abstract boolean isValidataData();
+}
+
+class Mobile extends ValidData{
     public boolean isMobileNumberValid(){
         System.out.println("VALIDATING NUMBER" );
         //code logic
@@ -7,7 +12,7 @@ class Mobile{
     }
 }
 
-class AddressData{
+class AddressData extends ValidData{
     public boolean isAddressValid(){
         System.out.println("VALIDATING ADDRESS" );
         //code logic
@@ -16,15 +21,9 @@ class AddressData{
 }
 
 class User{
-    public void addMobileNumber(Mobile mobile){
-        if(mobile.isMobileNumberValid()){
-            System.out.println("Mobile number is valid and added ");
-        }
-    }
-
-    public void addAddress(AddressData addressData){
-        if(addressData.isAddressValid()){
-            System.out.println("Address data are valid and added ");
+    public void addNewData(ValidateData validateData){
+        if(validataData.isValidData()){
+            System.out.println("Data are valid and added ");
         }
     }
 }
