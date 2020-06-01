@@ -14,7 +14,7 @@ public class PrintArray {
     }
 
     public static void main(String[] args){
-        IndexOutOfBound i = new IndexOutOfBound();
+        PrintArray i = new PrintArray();
         i.printElement();
     }
 }
