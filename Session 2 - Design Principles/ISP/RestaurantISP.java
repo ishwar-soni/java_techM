@@ -1,13 +1,17 @@
 package com.upGrad;
 
-interface RestaurantOnlineISP {
+interface OnlineOrderService {
     public void acceptOnlineOrder();
-    public void takeTelephoneOrder();
     public void payOnline();
 
 }
 
-interface RestaurantInPersonISP{
+interface TelephoneOrderService {
+    public void takeTelephoneOrder();
+    public void payOnline();
+}
+
+interface WalkInOrderService{
     public void walkInCustomerOrder();
     public void payInPerson();
 }

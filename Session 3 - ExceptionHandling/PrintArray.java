@@ -1,6 +1,6 @@
 package com.upGrad;
 
-public class IndexOutOfBound {
+public class PrintArray {
     public  void printElement(){
         int[] arr = new int[4];
         arr[0] = 1;
@@ -14,7 +14,7 @@ public class IndexOutOfBound {
     }
 
     public static void main(String[] args){
-        IndexOutOfBound i = new IndexOutOfBound();
+        PrintArray i = new PrintArray();
         i.printElement();
     }
 }
