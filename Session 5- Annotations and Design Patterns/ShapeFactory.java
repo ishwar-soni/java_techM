@@ -1,43 +1,40 @@
 package com.upGrad;
 
 interface Shape{
-    void draw();
+    void drawShape();
 }
-class RectangleShape implements Shape {
+class Rectangle implements Shape {
     @Override
-    public void draw() {
-        System.out.println("Inside Rectangle::draw() method.");
+    public void drawShape() {
+        System.out.println("Drawing a new Rectangle .");
     }
 }
-class SquareShape implements Shape {
+class Square implements Shape {
     @Override
-    public void draw() {
-        System.out.println("Inside Square::draw() method.");
+    public void drawShape() {
+        System.out.println("Drawing a new Square");
     }
 }
-class CircleShape implements Shape {
+class Circle implements Shape {
     @Override
-    public void draw() {
-        System.out.println("Inside Circle::draw() method.");
+    public void drawShape() {
+        System.out.println("Drawing a new Circle");
     }
 }
-
 public class ShapeFactory {
     //use getShape method to get object of type shape
     public Shape getShape(String shapeType){
-        if(shapeType == null){
+        if(shapeType == null)
             return null;
-        }
         if(shapeType.equalsIgnoreCase("CIRCLE")){
-            return new CircleShape();
+            return new Circle();
 
-        } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
-            return new RectangleShape();
+        }else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+            return new Rectangle();
 
-        } else if(shapeType.equalsIgnoreCase("SQUARE")){
-            return new SquareShape();
+        }else if(shapeType.equalsIgnoreCase("SQUARE")){
+            return new Square();
         }
-
         return null;
     }
 }
