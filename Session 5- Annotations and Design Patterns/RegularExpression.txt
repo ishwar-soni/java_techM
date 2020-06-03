@@ -1,0 +1,4 @@
+^[a-zA-Z]*$ ---- only aphabets
+^[a-zA-Z0-9]*$ ---- alphanumeric
+^\w+@[a-zA-z_]+?\.[a-zA-Z]{2,3}$ -- email validation 
+^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,}) -- password validation 
