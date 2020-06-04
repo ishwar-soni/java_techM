@@ -1,0 +1,25 @@
+CREATE TABLE UPGRAD_TOPICS( 
+ courseID number(5) not null,
+ courseName varchar2(20),
+ topicName varchar2(40) not null,
+ instructorName varchar2(40),
+ rate number(5) not null );
+
+INSERT INTO UPGRAD_TOPICS( courseID, courseName, topicName, instructorName, rate )
+VALUES (1, 'Java', 'Design Principles', 'Sandeep', '4');
+
+INSERT INTO UPGRAD_TOPICS( courseID, courseName, topicName, instructorName, rate )
+VALUES (2, 'Java', 'Git', 'Sandeep', '4');
+
+INSERT INTO UPGRAD_TOPICS( courseID, courseName, topicName, instructorName, rate )
+VALUES (3, 'Java', 'Design Principles', 'Sandeep', '4');
+
+SELECT * FROM UPGRAD_TOPICS;
+
+UPDATE UPGRAD_TOPICS SET topicName = 'Design principles and best practices' WHERE courseID = 3;
+
+SELECT * FROM UPGRAD_TOPICS;
+
+DELETE FROM UPGRAD_TOPICS WHERE courseID = 2;
+
+DROP TABLE UPGRAD_TOPICS ;
