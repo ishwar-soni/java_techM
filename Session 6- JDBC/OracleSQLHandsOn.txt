@@ -1,0 +1,25 @@
+CREATE TABLE STUDENT ( 
+ StudentId number(10) not null,
+ LastName varchar2(20),
+ FirstName varchar2(20) not null,
+ Address varchar2(40),
+ City varchar(20) not null );
+
+INSERT INTO STUDENT ( StudentId, LastName, FirstName, Address, City) 
+VALUES (1, 'Tom', 'Johnathan', '5th cross road', 'Bengaluru');
+
+INSERT INTO STUDENT ( StudentId, LastName, FirstName, Address, City) 
+VALUES (2, 'Ram', 'Kumar', '6th cross road', 'Bengaluru');
+
+INSERT INTO STUDENT ( StudentId, LastName, FirstName, Address, City) 
+VALUES (3, 'Shyam', 'Kumar', 'Main Road', 'Patna');
+
+SELECT * FROM STUDENT;
+
+UPDATE STUDENT SET City = 'Mumbai' WHERE StudentId = 1;
+
+SELECT * FROM STUDENT; 
+
+DELETE FROM STUDENT WHERE StudentId = 2;
+
+DROP TABLE STUDENT ;
