@@ -9,14 +9,11 @@ public class HashCodeandEquals {
     }
     @Override
     public boolean equals(Object obj) {
-        // checking if both the object references are
-        // referring to the same object.
+        // checking if both the object references are referring to the same object.
         if(this == obj)
             return true;
-        // it checks if the argument is of the
-        // type HashCodeandEquals by comparing the classes
-        // of the passed argument and this object.
-        // if(!(obj instanceof Geek)) return false; ---> avoid.
+        // it checks if the argument is of the type HashCodeandEquals by comparing the classes
+        // if(!(obj instanceof HashCodeandEquals)) return false; 
         if(obj == null || obj.getClass()!= this.getClass())
             return false;
         // type casting of the argument.
@@ -27,23 +24,18 @@ public class HashCodeandEquals {
     }
     @Override
     public int hashCode() {
-        // We are returning the id
-        // as a hashcode value.
-        // we can also return some
-        // other calculated value or may
-        // be memory address of the
-        // Object on which it is invoked.
-        // it depends on how you implement
-        // hashCode() method.
+        // We are returning the id as a hashcode value.
+        // we can also return some other calculated value or may be memory address of the Object on which it is invoked.
+        // it depends on how you implement hashCode() method.
         return this.id;
     }
 }
 
 //Driver code
-class GFG
+class Main
 {
     public static void main (String[] args) {
-        // creating the Objects of Geek class.
+        // creating the Objects of HashCodeandEquals class.
         HashCodeandEquals h1 = new HashCodeandEquals("aa", 1);
         HashCodeandEquals h2 = new HashCodeandEquals("aa", 1);
         // comparing above created Objects.
