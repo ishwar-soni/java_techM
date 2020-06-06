@@ -18,10 +18,9 @@ public class BufferedReaderWriter {
         }
     }
     public static void writeDataOnFile() {
-        //initializing FileWriter
-        FileWriter upgrad_file;
         try {
-            upgrad_file = new FileWriter("upGrad_file.txt");
+            //initializing FileWriter
+            FileWriter upgrad_file = new FileWriter("upGrad_file.txt");
             // Initialing BufferedWriter
             BufferedWriter upgradWrite = new BufferedWriter(upgrad_file);
             System.out.println("Starting to write on the document");
@@ -53,8 +52,18 @@ public class BufferedReaderWriter {
         // Printing the read line
         System.out.println(string);
     }
+
+    public static void appendDataOnFile() throws IOException {
+        File file = new File("upGrad_file.txt");
+        FileWriter fr = new FileWriter(file, true);
+        BufferedWriter br = new BufferedWriter(fr);
+        br.write("This is the new string appended in the file");
+        br.close();
+        fr.close();
+
+    }
     public static void main(String[] args) throws IOException {
-        writeDataOnFile();
+        appendDataOnFile();
     }
 }
 
