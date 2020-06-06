@@ -23,7 +23,7 @@ public class ObjectInputOutputStream {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         //creating a file with FileOutputStream
        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("StreamFile.txt"));
-       ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("StreamFile"));
+       ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("StreamFile.txt"));
 
        StudentSerialized studentObject = new StudentSerialized("Ram" , 20);
 
