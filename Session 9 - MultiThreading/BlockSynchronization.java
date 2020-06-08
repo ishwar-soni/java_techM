@@ -1,6 +1,5 @@
 package com.upGrad;
 
-import java.io.*;
 import java.util.*;
 
 class Entity {
@@ -25,12 +24,3 @@ public class BlockSynchronization {
         System.out.println(ent.name);
     }
 }
-
-class SharedObj
-{
-    // Changes made to sharedVar in one thread
-    // may not immediately reflect in other thread
-    static int sharedVar = 6;
-}
-
-
