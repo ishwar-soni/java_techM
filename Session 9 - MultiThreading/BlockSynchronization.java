@@ -1,36 +1,38 @@
 package com.upGrad;
 
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-class Entity {
-    String name = "";
-    public int count = 0;
-    public void entityName(String nameStr, List<String> list)
-    {
-        // Only one thread can change the name
-        synchronized(this) {
-            name = nameStr;
-            count++; // how many threads change entity's name.
+ class Count{
+    int number = 0;
+    public void incrementNumber(){
+        synchronized (this) {
+            this.number++;
         }
-        // All other threads are permitted to add  into list.
-        list.add(name);
     }
 }
-public class BlockSynchronization {
-    public static void main (String[] args) {
-        Entity ent = new Entity();
-        List<String> list = new ArrayList<String>();
-        ent.entityName("UpGrad", list);
-        System.out.println(ent.name);
+ class Counter extends Thread{
+    private Count count;
+    public Counter(Count counter){
+        this.count = counter;
+    }
+    public void run() {
+        for(int i=0; i<5; i++){
+            count.incrementNumber();
+            System.out.println("Counter :" + count.number);
+        }
     }
 }
 
-class SharedObj
-{
-    // Changes made to sharedVar in one thread
-    // may not immediately reflect in other thread
-    static int sharedVar = 6;
+
+public class BlockSynchronizationExample{
+    public static void main(String[] args){
+        Count counter = new Count();
+        Counter  counter1 = new Counter(counter);
+        Counter  counter2 = new Counter(counter);
+        Counter  counter3 = new Counter(counter);
+        counter1.start();
+        counter2.start();
+        counter3.start();
+    }
 }
-
-
