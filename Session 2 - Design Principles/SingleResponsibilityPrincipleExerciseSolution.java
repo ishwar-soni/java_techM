@@ -1,8 +1,4 @@
 class OnlineFoodOrderCustomerService {
-    public static void orderInventory(String InventoryItemsList){
-        //logic goes here
-    }
-
     public static void orderDish(String dishName){
         //logic goes here
     }
@@ -15,4 +11,10 @@ class OnlineFoodOrderCustomerService {
         //logic goes here
     }
 
+}
+
+class OnlineFoodOrderKitchenService{
+    public static void orderInventory(String InventoryItemsList){
+        //logic goes here
+    }
 }
