@@ -1,70 +1,70 @@
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
 $ git branch
 #  master
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
 $ git checkout -b intialCodeSetup
 #Switched to a new branch 'initialCodeSetup'
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (intialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (intialCodeSetup)
 $ git add .
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (intialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (intialCodeSetup)
 $ git commit -m "intial code stub added"
 #[intialCodeSetup (root-commit) add0c03] intial code stub added
 # 2 files changed, 11 insertions(+)
 # create mode 100644 PartyOrder.java
 # create mode 100644 README.md
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (intialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (intialCodeSetup)
 $ git checkout -b RahulOrders
 #Switched to a new branch 'RahulOrders'
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
 $ git add .
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
 $ git commit -m "order added for Rahul"
 #[RahulOrders 278d3e1] order added for Rahul
 # 1 file changed, 3 insertions(+), 3 deletions(-)
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
 $ git checkout initialCodeSetup
 #Switched to branch 'initialCodeSetup'
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git branch
 #  RahulOrders
 #* initialCodeSetup
 #  master
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git checkout -b RajOrders
 #Switched to a new branch 'RajOrders'
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RajOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RajOrders)
 $ git add .
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RajOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RajOrders)
 $ git commit -m "added order for Raj"
 #[RajOrders dc01325] added order for Raj
 # 1 file changed, 3 insertions(+), 3 deletions(-)
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (RajOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RajOrders)
 $ git checkout initialCodeSetup
 #Switched to branch 'initialCodeSetup'
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git merge RajOrders
 #Updating add0c03..dc01325
 #Fast-forward
 # PartyOrder.java | 6 +++---
 # 1 file changed, 3 insertions(+), 3 deletions(-)
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git diff initialCodeSetup RajOrders
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git diff RajOrders RahulOrders
 #diff --git a/PartyOrder.java b/PartyOrder.java
 #index f7d0aad..2e46b94 100644
@@ -85,11 +85,11 @@ $ git diff RajOrders RahulOrders
 # }
 #
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git initialCodeSetup RahulOrders
 #git: 'initialCodeSetup' is not a git command. See 'git --help'.
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git diff initialCodeSetup RahulOrders
 #diff --git a/PartyOrder.java b/PartyOrder.java
 #index f7d0aad..2e46b94 100644
@@ -110,7 +110,7 @@ $ git diff initialCodeSetup RahulOrders
 # }
 #
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git log
 #commit dc013250e2b397292b133c976c63b7bf6aa15043 (HEAD -> initialCodeSetup, RajOrders)
 #Author: Sandeep Sinha <sandeep2official@gmail.com>
@@ -124,20 +124,20 @@ $ git log
 #
 #    intial code stub added
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git merge RahulOrders
 #Auto-merging PartyOrder.java
 #CONFLICT (content): Merge conflict in PartyOrder.java
 #Automatic merge failed; fix conflicts and then commit the result.
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup|MERGING)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup|MERGING)
 $ git merge --abort
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $ git status
 #On branch initialCodeSetup
 #nothing to commit, working tree clean
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/projectRepo (initialCodeSetup)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $
 #
