@@ -1,7 +1,7 @@
 package com.upGrad;
 
 public class KISSExample {
-    public String getMonths(int month)   {
+    public String getMonth(int month)   {
         switch (month) {
             case 1:
                 return "JAN";
@@ -19,7 +19,7 @@ public class KISSExample {
                 return "month must be in range 1 to 6";
         }
     }
-    public String getMonths2(int month)   {
+    public String getMonth_KISS(int month)   {
         if ((month < 1) || (month > 6)) return "month must be in range 1 to 6";
         String[] months = {
                 "JAN",
