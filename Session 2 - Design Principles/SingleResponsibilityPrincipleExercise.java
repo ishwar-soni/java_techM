@@ -1,18 +1,17 @@
 class OnlineFoodOrderCustomerService {
-    public static void orderInventory(String InventoryItemsList){
+    public void orderInventory(String InventoryItemsList){
         //logic goes here
     }
 
-    public static void orderDish(String dishName){
+    public void orderDish(String dishName){
         //logic goes here
     }
 
-    public static void totalBillAmount(int customerId){
+    public void totalBillAmount(int customerId){
         //logic goes here
     }
 
-    public static void cartItems(int customerId){
+    public void cartItems(int customerId){
         //logic goes here
     }
-
 }
