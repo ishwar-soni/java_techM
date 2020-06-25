@@ -1,12 +1,12 @@
 package com.upGrad;
-class Students{
+class Student {
     public boolean isStudentValid(){
         System.out.println("add student : VALIDATING STUDENT" );
         //code logic
         return true;
     }
 }
-class Teachers{
+class Teacher {
     public boolean isTeacherValid(){
         System.out.println("add teacher : VALIDATING TEACHER" );
         //code logic
@@ -14,17 +14,15 @@ class Teachers{
     }
 }
 class SchoolManager{
-    public void addNewStudentData(Students students){
-        if(students.isStudentValid()){
-            System.out.println("Students are valid and added ");
+    public void addNewStudentData(Student student){
+        if(student.isStudentValid()){
+            System.out.println("Student is valid and added");
         }
     }
 
-    public void addNewTeacherData(Teachers teachers){
-        if(teachers.isTeacherValid()){
-            System.out.println("Teacher are valid and added ");
+    public void addNewTeacherData(Teacher teacher){
+        if(teacher.isTeacherValid()){
+            System.out.println("Teacher is valid and added");
         }
     }
-}
-public class OpenClosedPrinciple {
 }
