@@ -10,16 +10,16 @@ class OnlineOrderServiceImpl implements OnlineOrderService {
 }
 
 class TelephoneOrderServiceImpl implements TelephoneOrderService {
-    public void takeTelephoneOrder() {
-        //logic for placing telephone order
-    }
-    public void payOnline() {
-        //logic for paying online
-    }
+	public void acceptTelephoneOrder() {
+		//logic for placing telephone order
+	}
+	public void payOnline() {
+		//logic for paying online
+	}
 }
 
 class WalkInOrderServiceImpl implements WalkInOrderService{
-    public void walkInCustomerOrder() {
+    public void acceptWalkInOrder() {
         //logic for placing walkin order
     }
     public void payInPerson() {
