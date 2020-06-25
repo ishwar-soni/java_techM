@@ -1,3 +1,5 @@
+package com.upGrad;
+
 public interface BookManagerService {
     public int totalBooksInStock();
     public int totalBooksInStocksForGivenBook(int bookId);

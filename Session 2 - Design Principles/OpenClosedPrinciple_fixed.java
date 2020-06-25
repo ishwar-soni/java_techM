@@ -1,30 +1,29 @@
 package com.upGrad;
+
 abstract class ValidateData{
-    public abstract boolean isValidateData();
+    public abstract boolean isValid();
 }
-class Students_OCP extends ValidateData{
-    public boolean isValidateData(){
+
+class Student extends ValidateData{
+    public boolean isValid(){
         System.out.println("add student : VALIDATING STUDENT" );
         //code logic
         return true;
     }
 }
-class Teachers_OCP extends ValidateData{
-    public boolean isValidateData(){
+
+class Teacher extends ValidateData{
+    public boolean isValid(){
         System.out.println("add teacher : VALIDATING TEACHER" );
         //code logic
         return true;
     }
 }
-class SchoolManager_OCP {
+
+class SchoolManager {
     public void addNewData(ValidateData validateData) {
-        if (validateData.isValidateData()) {
-            System.out.println("Data are valid and added ");
+        if (validateData.isValid()) {
+            System.out.println("Data is valid and added ");
         }
     }
 }
-
-public class OpenClosedPrinciple_fixed {
-
-}
-

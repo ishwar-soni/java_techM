@@ -7,7 +7,7 @@ class Mobile{
     }
 }
 
-class AddressData{
+class Address{
     public boolean isAddressValid(){
         System.out.println("VALIDATING ADDRESS" );
         //code logic
@@ -22,10 +22,9 @@ class User{
         }
     }
 
-    public void addAddress(AddressData addressData){
+    public void addAddress(Address addressData){
         if(addressData.isAddressValid()){
-            System.out.println("Address data are valid and added ");
+            System.out.println("Address is valid and added ");
         }
     }
 }
-

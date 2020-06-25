@@ -1,6 +1,6 @@
 package com.upGrad;
 
-public class YAGNIExample {
+public class UserService {
     //functions for logging in
     public boolean authenticateUser(String email, String password){
         //logic
