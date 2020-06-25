@@ -1,4 +1,4 @@
-
+package com.upGrad;
 interface ValidateData{
     public boolean isValidData();
 }
@@ -11,7 +11,7 @@ class Mobile implements ValidateData{
     }
 }
 
-class AddressData implements ValidateData{
+class Address implements ValidateData{
     public boolean isValidData(){
         System.out.println("VALIDATING ADDRESS" );
         //code logic
@@ -20,16 +20,15 @@ class AddressData implements ValidateData{
 }
 
 class User{
-    public void addMobileNumber(ValidateData validateData){
-        if(validateData.isValidData()){
-            System.out.println("Data is valid and added ");
+    public void addMobileNumber(ValidateData mobile){
+        if(mobile.isValidData()){
+            System.out.println("Mobile number is valid and added ");
         }
     }
 
-    public void addAddress(ValidateData validateData){
-        if(validateData.isValidData()){
-            System.out.println("Data is valid and added ");
+    public void addAddress(ValidateData address){
+        if(address.isValidData()){
+            System.out.println("Address is valid and added ");
         }
     }
 }
-
