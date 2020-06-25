@@ -1,40 +1,44 @@
 package com.upGrad;
-//class for admission desk
-public class SingleResponsibiltyPrinciple {
-    public static void addStudent(StudentLowCohesion student){
+//without single responsibility principle
+public class School{
+    public void addStudent(Student student){
         //code
     }
-
-    public static int findStudentID(String studentName){
-        //code
-        return 0;
-    }
-
-    public static void studentAdmissionStatus(int studentId){
-        //codeLogic
-    }
-
-    public static void teacherSalaryStatus(int teacherId){
-        //codeLogic
-    }
-
-}
-
-class StudentFunctions{
-    public static void addStudent(StudentLowCohesion student){
-        //code
-    }
-    public static int findStudentID(String studentName){
+    public int findStudentID(String studentName){
         //code
         return 0;
     }
-}
-
-class SchoolFunctions{
-    public static void teacherSalaryStatus(int teacherId){
+    public void studentAdmissionStatus(int studentId){
         //codeLogic
     }
-    public static void studentAdmissionStatus(int studentId){
+    public void teacherSalaryStatus(int teacherId){
+        //codeLogic
+    }
+    public boolean checkTeacherAttendance(int teacherId){
+        //codeLogic
+    }
+}
+
+
+//With Single Responsibility Principle
+public class Student {
+    public void addStudent(Student student){
+        //code
+    }
+    public int findStudentID(String studentName){
+        //code
+        return 0;
+    }
+}
+
+public class School{
+    public void studentAdmissionStatus(int studentId){
+        //codeLogic
+    }
+    public void teacherSalaryStatus(int teacherId){
+        //codeLogic
+    }
+    public boolean checkTeacherAttendance(int teacherId){
         //codeLogic
     }
 }
