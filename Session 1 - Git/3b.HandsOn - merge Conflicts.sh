@@ -1,8 +1,8 @@
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (master)
 $ git branch
 #  master
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (RahulOrders)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (master)
 $ git checkout -b intialCodeSetup
 #Switched to a new branch 'initialCodeSetup'
 #

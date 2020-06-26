@@ -1,4 +1,3 @@
-package com.upGrad;
 
 class Bird{
     private boolean canBirdFly ;
@@ -20,33 +19,34 @@ class Bird{
         this.birdVoice = birdVoice;
     }
 }
-}
+
 class ToyBird extends Bird{
     public ToyBird(){
-        this.canBirdFly = false;
-        this.birdVoice = "Sound over speakers";
+        this.setCanBirdFly(false);
+        this.setBirdVoice("Sound over speakers");
     }
 }
 class Duck extends Bird{
-    public Duck{
-        this.canBirdFly = false;
-        this.birdVoice = "Quack Quack";
+    public Duck(){
+        this.setCanBirdFly(false);
+        this.setBirdVoice("Quack Quack");
     }
 }
 
 class BirdFunctions{
     public void makeBirdFly(Bird bird){
-        if(bird.canBirdFly)
+        if(bird.isCanBirdFly())
             System.out.println("Bird can fly ");
         else
             System.out.println("Bird can not fly");
     }
     public void makeBirdSpeak(Bird bird){
-        System.out.println("Bird says : " + bird.birdVoice);
+        System.out.println("Bird says : " + bird.getBirdVoice());
     }
 }
 
-public class LSPExercise {
+ class LSPExercise {
+    public static void main(String[] args){
     BirdFunctions birdFunctions = new BirdFunctions();
     ToyBird toyBird = new ToyBird();
     Duck duck = new Duck();
@@ -54,5 +54,5 @@ public class LSPExercise {
     birdFunctions.makeBirdFly(toyBird);
     birdFunctions.makeBirdSpeak(duck);
     birdFunctions.makeBirdSpeak(duck);
-
+    }
 }

@@ -1,8 +1,6 @@
-package com.upGrad;
-
 class Bird{
-        private boolean canBirdFly ;
-        private String birdVoice;
+    private boolean canBirdFly ;
+    private String birdVoice;
 
     public boolean isCanBirdFly() {
         return canBirdFly;
@@ -20,29 +18,29 @@ class Bird{
         this.birdVoice = birdVoice;
     }
 }
-}
+
 class ToyBird extends Bird{
     public ToyBird(){
-        this.canBirdFly = false;
-        this.birdVoice = "Sound over speakers";
+        this.setCanBirdFly(false);
+        this.setBirdVoice("Sound over speakers");
     }
 }
 class Duck extends Bird{
-    public Duck{
-        this.canBirdFly = false;
-        this.birdVoice = "Quack Quack";
+    public Duck(){
+        this.setCanBirdFly(false);
+        this.setBirdVoice("Quack Quack");
     }
 }
 
 class BirdFunctions{
     public void makeBirdFly(Duck duck){
-        if(bird.canBirdFly)
+        if(duck.isCanBirdFly())
             System.out.println("Bird can fly ");
         else
             System.out.println("Bird can not fly");
     }
     public void makeBirdSpeak(ToyBird toyBird){
-        System.out.println("Bird says : " + bird.birdVoice);
+        System.out.println("Bird says : " + toyBird.getBirdVoice());
     }
 }
 

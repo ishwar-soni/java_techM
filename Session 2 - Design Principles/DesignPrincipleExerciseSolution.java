@@ -30,6 +30,44 @@ class Student{
         //code
         return true;
     }
+
+    public int checkStudentMarks(int studentId){
+        int maths = findMathsMarks(studentId);
+        int science = findScienceMarks(studentId);
+        return maths + science;
+    }
+
+    public char checkStudentGrade(int studentId){
+        int total = checkStudentMarks(studentId);
+        if(total > 80){
+            return 'A';
+        }else{
+            return 'B';
+        }
+    }
+    public boolean checkTeacherAttendance(String teacherName, int teacherId) {
+        //some code logic
+        return true;
+    }
+    public int findElectricityBill(int schoolElectricMeterId){
+        //code
+        return 0;
+    }  
+
+    public int findMathsMarks(int studentId){
+        //code
+        return 0;
+    }
+
+      public int findScienceMarks(int studentId){
+        //code
+        return 0;
+    }
+
+    public void print(){
+        //write print logic code here
+    }
+
 }
 class Teacher{
     public boolean checkTeacherAttendance(String teacherName, int teacherId) {
