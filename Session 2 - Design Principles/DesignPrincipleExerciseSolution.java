@@ -5,7 +5,7 @@ class Address{
 class PhoneNumber{
     //all phonenumber details and validation
 }
-class Student_{
+class Student{
     int studentId;
     String studentName;
     String dateOfJoining;
