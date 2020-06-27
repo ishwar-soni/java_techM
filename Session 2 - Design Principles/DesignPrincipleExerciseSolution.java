@@ -1,10 +1,11 @@
+
 class Address{
     //all address  details and validation
 }
 class PhoneNumber{
     //all phonenumber details and validation
 }
-class Student{
+class Student_{
     int studentId;
     String studentName;
     String dateOfJoining;
@@ -24,11 +25,7 @@ class Student{
     //rate of calculation of late coming fine is 10% - updated on version X
     public int findLateComingFine (int numberOfDaysLate, int grade){
         int fees = findStudentFees(grade);
-        return fees * 0.1 * numberOfDaysLate;
-    }
-    public boolean checkStudentMarks(int studentId){
-        //code
-        return true;
+        return (int) (fees * 0.1 * numberOfDaysLate);
     }
 
     public int checkStudentMarks(int studentId){
@@ -45,7 +42,6 @@ class Student{
             return 'B';
         }
     }
-
     public int findMathsMarks(int studentId){
         //code
         return 0;

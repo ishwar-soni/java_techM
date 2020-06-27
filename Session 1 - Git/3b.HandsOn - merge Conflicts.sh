@@ -141,3 +141,4 @@ $ git status
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (initialCodeSetup)
 $
 #
+# ******** We can either change the file manually and then commit the saves by using ( git add . ) then ( git commit -m <message>) and push to remote repository using (git push)

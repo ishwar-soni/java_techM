@@ -27,7 +27,7 @@ class Student{
             fees =  2000;
         else
             fees =  2800;
-        int lateComingDues = fees * 0.1 * numberOfDaysLate;
+        int lateComingDues = (int) (fees * 0.1 * numberOfDaysLate);
         return lateComingDues;
     }
     public int checkStudentMarks(int studentId){
