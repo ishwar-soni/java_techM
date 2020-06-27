@@ -2,7 +2,7 @@ package com.upGrad;
 
 public class CheckedUncheckedExercise {
     //handle the possible exception here
-    public int getArrayElement(){
+    public void getArrayElement(){
         int[] arr = new int[5];
         try{
             int a = arr[5];
