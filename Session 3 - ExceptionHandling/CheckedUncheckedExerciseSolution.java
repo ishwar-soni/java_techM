@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class CheckedUncheckedExercise {
     //handle the possible exception here
-    public void getArrayElement(){
+    public void readElement(){
         int[] arr = new int[5];
         try{
             int a = arr[5];
