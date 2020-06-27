@@ -13,7 +13,7 @@ public class CheckedUncheckedExercise {
     }
 
     public void readingDataFromFile(){
-        try{
+    try{
         FileReader file = new FileReader("file2.txt");
         file = null;
         file.read();

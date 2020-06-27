@@ -1,34 +1,30 @@
-class Employee {
-    // employee attributes and method
+class Person {
+    // person attributes and method
 }
 
-class OracleDatabase {
-    public Employee fetchById (int id) {
-        Employee employee = null;
-        //Code to fetch data from the database
-        return employee;
+class Android {
+    public void sendSms (String msg, int phoneNumber) {
+        //code logic to send sms with "msg" as data to number -> "phoneNumber"
     }
 
-    public Employee[] findAll () {
-        Employee[] employees = null;
-        //Code to fetch data from the database
-        return employees;
+    public void call (int phoneNumber) {
+        //code logic to call number -> "phoneNumber"
     }
 
 }
 
-class EmployeeService {
-    private OracleDatabase oracleDatabase;
+class PhoneService {
+    private Android android;
     
-    public EmployeeService () {
-        oracleDatabase = new OracleDatabase();
+    public PhoneService () {
+        android = new Android();
     }
     
-    public Employee fetchById (int id) {
-        return oracleDatabase.fetchById(id);
+    public void useSmsFeature(String msg, int phoneNumber) {
+        android.sendSms(msg, phoneNumber);
     }
     
-    public Employee[] findAll () {
-        return oracleDatabase.findAll();
+    public void useCallFeature (int phoneNumber) {
+        android.call(phoneNumber);
     }
 }

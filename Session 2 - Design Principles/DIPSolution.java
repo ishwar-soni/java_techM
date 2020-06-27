@@ -1,52 +1,46 @@
-class Employee {
-    // student attributes and method
+
+interface PhoneFeatures {
+    public void sendSms (String msg, int phoneNumber);
+    public void call (int phoneNumber);
 }
 
-interface Database {
-    public Employee fetchById (int id);
-    public Employee[] findAll ();
-}
 
-class OracleDatabase implements Database{
-    public Employee fetchById (int id) {
-        Employee employee = null;
-        //Code to fetch data from the database
-        return employee;
+class Android implements PhoneFeatures{
+    public void sendSms (String msg, int phoneNumber) {
+        //code logic to send sms with "msg" as data to number -> "phoneNumber"
+        //logic is based for android phones
     }
 
-    public Employee[] findAll () {
-        Employee[] employees = null;
-        //Code to fetch data from the database
-        return employees;
+    public void call (int phoneNumber) {
+        //code logic to call number -> "phoneNumber"
+        //logic is based for android  phones
     }
 }
 
-class MySQLDatabase implements Database{
-    public Employee fetchById (int id) {
-        Employee employee = null;
-        //Code to fetch data from the database
-        return employee;
+class IOS implements PhoneFeatures{
+    public void sendSms (String msg, int phoneNumber) {
+        //code logic to send sms with "msg" as data to number -> "phoneNumber"
+        //logic is based for ios phones
     }
 
-    public Employee[] findAll () {
-        Employee[] employees = null;
-        //Code to fetch data from the database
-        return employees;
+    public void call (int phoneNumber) {
+        //code logic to call number -> "phoneNumber"
+        //logic is based for ios  phones
     }
 }
 
-class EmployeeService {
-    private Database database;
+class PhoneService {
+    private PhoneFeatures phone;
     
-    public EmployeeService (Database database) {
-        this.database = database;
-    }
-
-    public Employee fetchById (int id) {
-        return database.fetchById(id);
+    public PhoneService (PhoneFeatures phoneFeatures) {
+        phone = new Android();
     }
     
-    public Employee[] findAll () {
-        return database.findAll();
+    public void useSmsFeature(String msg, int phoneNumber) {
+        phone.sendSms(msg, phoneNumber);
+    }
+    
+    public void useCallFeature (int phoneNumber) {
+        phone.call(phoneNumber);
     }
 }
