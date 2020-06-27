@@ -7,8 +7,8 @@ public class CheckedUncheckedExercise {
         try{
             int a = arr[5];
             System.out.println("Last element is  :" + a);
-        }catch(NullPointerException ne){
-            System.out.println("Null pointer exception is happening due to null array");
+        }catch(ArrayIndexOutOfBoundsException ae){
+            System.out.println("trying to access outside of array");
         }
     }
 
@@ -17,9 +17,8 @@ public class CheckedUncheckedExercise {
         FileReader file = new FileReader("file2.txt");
         file = null;
         file.read();
-    } 
-        catch (IOException e) {
-        System.out.println("FileReader is not able read file from system");
+    }catch (NullPointerException e) {
+        System.out.println("We are trying to refer null reference");
     }
   }
 }

@@ -45,14 +45,6 @@ class Student{
             return 'B';
         }
     }
-    public boolean checkTeacherAttendance(String teacherName, int teacherId) {
-        //some code logic
-        return true;
-    }
-    public int findElectricityBill(int schoolElectricMeterId){
-        //code
-        return 0;
-    }  
 
     public int findMathsMarks(int studentId){
         //code

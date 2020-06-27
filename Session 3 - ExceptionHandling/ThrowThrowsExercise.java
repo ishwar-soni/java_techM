@@ -1,12 +1,10 @@
 package com.upGrad;
 
-public class ThrowThrowsExercise {
-    //In the following two methods, use throw and throws keyword to show exception handling
-    public static void printArray(){
-
-    }
-
-    public static void printString(String str){
-
+public class BankServices {
+    //in case we provie 0 months for emi calculation , how can we  use throw and throws 
+    public static void calculateEMIAmount(int totalAmount, int months){
+        int emiAmount = 0;
+        emiAmount = totalAmount/months;
+        System.out.println("Emi amount : " + emiAmount);
     }
 }
