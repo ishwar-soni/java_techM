@@ -15,7 +15,7 @@ public class CheckedUncheckedExceptions {
     }
     //uncheckedExceptions
     public static void readFile() { try {
-            FileReader file = new FileReader("pom.xml");
+            FileReader file = new FileReader("file2.txt");
             file = null;
             file.read();
         } catch (IOException e) {
