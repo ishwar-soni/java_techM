@@ -1,8 +1,11 @@
 package com.upGrad;
 
+import java.io.FileReader;
+import java.io.IOException;
+
 public class CheckedUncheckedExercise {
     //handle the possible exception here
-    public int getArrayElement(){
+    public void readElement(){
         int[] arr = new int[5];
         try{
             int a = arr[5];
@@ -13,12 +16,14 @@ public class CheckedUncheckedExercise {
     }
 
     public void readingDataFromFile(){
-    try{
-        FileReader file = new FileReader("file2.txt");
-        file = null;
-        file.read();
-    }catch (NullPointerException e) {
-        System.out.println("We are trying to refer null reference");
+        try{
+            FileReader file = new FileReader("file2.txt");
+            file = null;
+            file.read();
+        }catch (NullPointerException e) {
+            System.out.println("We are trying to refer null reference");
+        } catch (IOException e) {
+            System.out.println("Either file not present or not able to read.");
+        }
     }
-  }
 }
