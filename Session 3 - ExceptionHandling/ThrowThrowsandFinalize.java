@@ -1,6 +1,6 @@
 package com.upGrad;
 
-public class ThrowThrowsandFinalize {
+public class FunGames {
     public void fun() throws ClassNotFoundException {
         try{
             throw new ClassNotFoundException("demo");
