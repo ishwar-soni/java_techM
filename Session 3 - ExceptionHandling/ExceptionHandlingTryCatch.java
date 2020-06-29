@@ -1,33 +1,19 @@
 package com.upGrad;
 
-public class ExceptionHandlingTryCatch {
-    public int divideTwoNumber(int a, int b){
-        int res = a/b;
-        return res;
-    }
-
-    public void getStringLength(String str){
-        int len = str.length();
-        System.out.println("The length of the string is :" + str.length());
-    }
-
-    public int divideTwoNumberWithExceptionHandling(int a, int b){
-        int res = 0;
+public class EMICalculator {
+   public static int calculateEMIAmount(int totalAmount, int months){
+        //we will add emi calculation functionality here
+        int emiAmount = 0;
         try{
-            res = a/b;
-            return res;
-        }catch (ArithmeticException e){
-            System.out.println("Exception has been caught");
+            emiAmount = totalAmount/months;
+        }catch (ArithmeticException ae){
+            System.out.println("Number of months can't be less than 1");
         }
-        return res;
+        return 0;
     }
-
-    public void getStringLengthWithExceptionHandling(String str){
-        try {
-            int len = str.length();
-        }catch (NullPointerException e){
-            System.out.println("Exception has been caught");
-        }
-        System.out.println("The length of the string is :" + str.length());
-    }
+    
+    //calculateEMIAmount without exception handling
+     /*public static int calculateEMIAmount(int totalAmount, int months){
+          return  emiAmount = totalAmount/months;
+    }*/
 }
