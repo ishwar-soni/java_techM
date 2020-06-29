@@ -18,6 +18,9 @@ $ git branch feature2
 $ git checkout feature1
 #Switched to branch 'feature1'
 #
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/Java_upGrad/Session 1 - Git (master)
+$ vim PartyOrderTemplate.java
+#
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (feature1)
 $ git add .
 #
@@ -29,6 +32,9 @@ $ git commit -m "updated party order for feature1"
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (feature1)
 $ git checkout feature2
 #Switched to branch 'feature2'
+#
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/Java_upGrad/Session 1 - Git (master)
+$ vim PartyOrderTemplate.java
 #
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (feature2)
 $ git add .
