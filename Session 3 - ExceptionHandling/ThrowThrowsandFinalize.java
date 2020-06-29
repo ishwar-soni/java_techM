@@ -1,17 +1,22 @@
 package com.upGrad;
-
-public class FunGames {
-    public void fun() throws ClassNotFoundException {
-        try{
-            throw new ClassNotFoundException("demo");
-        }catch(ClassNotFoundException e) {
-            System.out.println("Caught inside fun().");
-            throw e; // rethrowing the exception
+class AccountServiceImpl{
+    //other methods and fields 
+public Account getAccountDetails(int accountNumber, int pin) throws Exception {
+        Account myAccount = accountDAO.getAccountDetails(accountNumber);
+        if (myAccount == null) {
+            System.out.println("Account does not exists");
+            return null;
+        } else {
+            if (myAccount.getPin() == pin) {
+              /*  System.out.println("Details are correct : login to account");
+                return myAccount;*/
+              throw new Exception("Account Not Found Exception");
+            } else {
+                System.out.println("Incorrect pin ");
+                return null;
+            }
         }
     }
-    public void throwsExcep() throws InterruptedException {
-        Thread.sleep(10000);
-        System.out.println("Hello upgrad people");
-    }
-
+ }
+    //other methods and fields 
 }
