@@ -2,16 +2,19 @@ package com.upgrad;
 
 import com.upgrad.DAO.AccountDAO;
 import com.upgrad.DAO.AccountDAOImpl;
+import com.upgrad.DAO.AccountDAOImplJDBC;
 import com.upgrad.beans.Account;
 import com.upgrad.service.AccountServiceImpl;
 import com.upgrad.utils.EMICalculator;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     //this is the main, which will be called at the beginning of the program
     public static void main(String[] args) throws Exception {
-        AccountDAO accountDAO = new AccountDAOImpl();
+     /*   AccountDAO accountDAO = new AccountDAOImplJDBC();
         boolean flag = true;
         AccountServiceImpl bankServices = new AccountServiceImpl(accountDAO);
         System.out.println("Kindly chose your option ");
@@ -99,6 +102,17 @@ public class Main {
                     System.out.println("Invalid option");
                     break;
             }
-        }
+        }*/
+
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        int data = list.get(0);
+
+        List<Boolean> list2 = new ArrayList<>();
+        List<Account> accounts = new ArrayList<>();
     }
 }
+//List<String>
+//List<Integer>
+//List<Character>

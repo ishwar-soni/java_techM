@@ -2,30 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7105cc92-9d06-4a84-a721-8cb48c92da65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/BankingApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/DAO/AccountDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/DAO/AccountDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/beans/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/beans/SavingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/exceptions/AccountDetailsNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/service/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/utils/AccountValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/utils/EMICalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankingApp MVC/src/main/java/com/upgrad/utils/LoanCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVCDemo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVCDemo/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/logs/access_log.2020-06-29" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/logs/access_log.2020-06-29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp MVC/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCDemo/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/target/classes/com/upgrad/controllers/Mvc_servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCDemo/target/classes/com/upgrad/controllers/Mvc_servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCDemo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/target/tomcat/logs/access_log.2020-06-02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MVCDemo/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVCDemo/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/upgrad/controllers/TermsConditionsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/upgrad/controllers/TermsConditionsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/upgrad/controllers/TermsConditionsServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/upgrad/controllers/TermsConditionsServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-06-29" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-06-29" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/index_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +98,8 @@
       <option name="presentableId" value="Default" />
       <updated>1593430059148</updated>
       <workItem from="1593430061294" duration="1593000" />
-      <workItem from="1593433310990" duration="836000" />
+      <workItem from="1593433310990" duration="4208000" />
+      <workItem from="1593523469500" duration="680000" />
     </task>
     <servers />
   </component>
@@ -121,21 +111,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1593430992093" />
-    <state width="1493" height="362" key="GridCell.Tab.0.bottom" timestamp="1593431782339">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom" timestamp="1593517302674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593431782339" />
-    <state width="1493" height="362" key="GridCell.Tab.0.center" timestamp="1593431782338">
+    <state width="1493" height="388" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593517302674" />
+    <state width="1493" height="388" key="GridCell.Tab.0.center" timestamp="1593517302674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593431782338" />
-    <state width="1493" height="362" key="GridCell.Tab.0.left" timestamp="1593431782338">
+    <state width="1493" height="388" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593517302674" />
+    <state width="1493" height="388" key="GridCell.Tab.0.left" timestamp="1593517302674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593431782338" />
-    <state width="1493" height="362" key="GridCell.Tab.0.right" timestamp="1593431782339">
+    <state width="1493" height="388" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593517302674" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right" timestamp="1593517302674">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="362" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593431782339" />
+    <state width="1493" height="388" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593517302674" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.upGrad;
+package com.session6;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -59,7 +59,7 @@ public class DateTimeDemo {
     }
 
     public static void main(String[] args){
-        dateTimeDemo();
+        calculateDaysFromCurrentDate("10/07/2020");
     }
 }
 

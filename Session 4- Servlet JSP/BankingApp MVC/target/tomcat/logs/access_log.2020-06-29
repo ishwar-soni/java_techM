@@ -1,2 +1,0 @@
-0:0:0:0:0:0:0:1 - - [29/Jun/2020:18:08:13 +0530] "GET / HTTP/1.1" 200 1976 http-bio-8095-exec-2 1124
-0:0:0:0:0:0:0:1 - - [29/Jun/2020:18:08:26 +0530] "GET /AccountServlet?name=Sandeep&accountNumber=123&pin=123&currentBalance=1000&email=sandee%40email.com&psw=pass&psw-repeat=pass HTTP/1.1" 200 211 http-bio-8095-exec-3 10

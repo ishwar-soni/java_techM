@@ -10,8 +10,20 @@
     <servlet-class>com.upgrad.controllers.TermsConditionsServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.upgrad.controllers.StudentServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>TermsConditionsServlet</servlet-name>
     <url-pattern>/servlet</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+
+
 </web-app>

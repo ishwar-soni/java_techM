@@ -54,6 +54,18 @@
         <p>Already have an account? <a href="#">Sign in</a>.</p>
     </div>
 </form>
+
+    <div>
+        <%
+            int a = 3;
+            int b = 4;
+            int c = a + b;
+            out.println("c = " + c);
+            session.setAttribute("user", "sandeep");
+            out.println(session.getAttribute("user"));
+
+        %>
+    </div>
 </body>
 </html>
 
