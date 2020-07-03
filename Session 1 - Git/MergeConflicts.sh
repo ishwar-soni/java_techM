@@ -157,6 +157,21 @@ $ git merge feature2
 #CONFLICT (content): Merge conflict in PartyOrderTemplate.java
 #Automatic merge failed; fix conflicts and then commit the result.
 #
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git ((caa7c20...)|MERGING)
+$ git reset
+#Unstaged changes after reset:
+#M       PartyOrderTemplate.java
+
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git ((caa7c20...))
+#$ git reset --hard HEAD
+#HEAD is now at caa7c20 updated party order for feature1
+#
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master)
+$ git merge feature2
+#Auto-merging PartyOrderTemplate.java
+#CONFLICT (content): Merge conflict in PartyOrderTemplate.java
+#Automatic merge failed; fix conflicts and then commit the result.
+#
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master|MERGING)
 $ vim PartyOrderTemplate.java
 #
