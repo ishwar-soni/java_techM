@@ -2,25 +2,24 @@ package com.upGrad;
 
 import java.io.*;
 
-public class CheckedUncheckedExceptions {
-
+public class ReadData {
     //checkedExceptions
-    private static void checkedExceptionWithTryCatch() {
-        File file = new File("not_existing_file.txt");
+    public static void readDataFromFile(){
         try {
-            FileInputStream stream = new FileInputStream(file);
+            FileReader fileReader = new FileReader("File1.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
     //uncheckedExceptions
-    public static void readFile() { try {
-            FileReader file = new FileReader("file2.txt");
-            file = null;
-            file.read();
-        } catch (IOException e) {
-            //Alternate logic
-            e.printStackTrace();
+    public static int calculateEMIAmount(int totalAmount, int months){
+        //we will add emi calculation functionality here
+        int emiAmount = 0;
+        try{
+            emiAmount = totalAmount/months;  //passing months as 0 , will throw ArithmeticException which is not checked here.
+        }catch (NullPoiterException ae){
+            System.out.println("Number of months can't be less than 1");
         }
+        return emiAmount;
     }
 }
