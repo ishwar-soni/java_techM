@@ -103,7 +103,7 @@ $ git status
 #
 #nothing to commit, working tree clean
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (master)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master)
 $ git log --all
 #commit 9059896684f5ab22949d92bb5d7a12dcc5b1d693 (HEAD -> master)
 #Author: Sandeep Sinha <sandeep2official@gmail.com>
@@ -117,7 +117,7 @@ $ git log --all
 #
 #    file2 updated
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (master)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master)
 $ git log -1
 #commit 9059896684f5ab22949d92bb5d7a12dcc5b1d693 (HEAD -> master)
 #Author: Sandeep Sinha <sandeep2official@gmail.com>
@@ -125,7 +125,7 @@ $ git log -1
 #
 #    added three files
 #
-#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/upGrad/learn-git (master)
+#SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master)
 $ git log --committer="Sandeep Sinha"
 #commit 9059896684f5ab22949d92bb5d7a12dcc5b1d693 (HEAD -> master)
 #Author: Sandeep Sinha <sandeep2official@gmail.com>
