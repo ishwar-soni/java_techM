@@ -163,7 +163,7 @@ $ git reset
 #M       PartyOrderTemplate.java
 
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git ((caa7c20...))
-#$ git reset --hard HEAD
+$ git reset --hard HEAD
 #HEAD is now at caa7c20 updated party order for feature1
 #
 #SandeepSinha@DESKTOP-OOM59NQ MINGW64 /d/learn-git (master)
